@@ -56,6 +56,16 @@ createApp({
             activeIndex : 0,
         }
     },
+    // BONUS 2
+    created() {
+        setInterval(() => {
+            if (this.activeIndex === this.slides.length - 1) {
+                this.activeIndex = 0;
+            } else {
+                this.activeIndex++;
+            }
+        }, 3000);
+    },
     methods: {
         prevSlide: function() {
             if(this.activeIndex === 0) {

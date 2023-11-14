@@ -38,7 +38,8 @@
                             :src="slide.image" 
                             alt="slide.title"
                             :class="index === activeIndex ? 'active' : ''"
-                        />
+                            @click="selectedSlide(index)" 
+                            />
                     </div>
                     <!-- <div class="thumb">
                         <img src="img/02.webp" alt="Ratchet & Clank" />

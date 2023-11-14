@@ -70,6 +70,10 @@ createApp({
             } else {
                 this.activeIndex++;
             }
+        },
+        // BONUS 1
+        selectedSlide: function(index) {
+            this.activeIndex = index;
         }
     }
 }).mount('#app')

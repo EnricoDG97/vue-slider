@@ -51,6 +51,7 @@
     object-fit: cover;
     display: block;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .thumb img.active {
